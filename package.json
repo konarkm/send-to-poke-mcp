@@ -1,0 +1,40 @@
+{
+  "name": "send-to-poke-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for sending messages to Poke via webhook",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "send-to-poke-mcp": "bin/send-to-poke-mcp"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build",
+    "smoke-test": "tsx scripts/smoke-test.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "poke",
+    "webhook",
+    "messaging"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.12.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
