@@ -4,6 +4,14 @@
   "description": "MCP server for sending messages to Poke via webhook",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konarkm/send-to-poke-mcp.git"
+  },
+  "homepage": "https://github.com/konarkm/send-to-poke-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/konarkm/send-to-poke-mcp/issues"
+  },
   "bin": {
     "send-to-poke-mcp": "bin/send-to-poke-mcp"
   },
